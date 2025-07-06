@@ -1,5 +1,5 @@
 # Dockerfile - VERSIÓN FINAL CON CLONACIÓN CORREGIDA
-FROM runpod/worker-comfyui:3.0.0-sdxl
+FROM runpod/worker-comfyui:5.0.0-sdxl
 
 # Instalar git-lfs para poder clonar tu modelo
 RUN apt-get update && apt-get install -y git-lfs && rm -rf /var/lib/apt/lists/*
