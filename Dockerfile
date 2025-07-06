@@ -5,7 +5,7 @@ FROM runpod/worker-comfyui:5.1.0-sdxl
 RUN apt-get update && apt-get install -y git-lfs && rm -rf /var/lib/apt/lists/*
 
 # --- CORRECCIÓN EN LA CLONACIÓN DEL MODELO ---
-WORKDIR /comfyui/models/diffusers
+WORKDIR /models/diffusers
 
 RUN git lfs install && \
     # 1. Clonamos el repo en una carpeta temporal
